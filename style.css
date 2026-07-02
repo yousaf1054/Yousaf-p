@@ -1,0 +1,80 @@
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 48;
+}
+
+.hero-mask {
+  border-radius: 40px;
+}
+
+.hover-scale {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.animate-infinite-scroll:hover {
+  animation-play-state: paused;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-line {
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 1.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.timeline-line.active {
+  transform: scaleY(1);
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1.1em;
+  background-color: currentColor;
+  margin-left: 3px;
+  vertical-align: middle;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: currentColor;
+  }
+}

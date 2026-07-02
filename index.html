@@ -1,0 +1,1493 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>YOUSAF P</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary": "#ffffff",
+              "surface-container-highest": "#e2e2e2",
+              "tertiary-fixed": "#ffddb7",
+              error: "#ba1a1a",
+              "surface-bright": "#f9f9f9",
+              "on-secondary-container": "#606800",
+              "secondary-fixed-dim": "#c2d000",
+              outline: "#747683",
+              background: "#f9f9f9",
+              "on-primary-container": "#fffbff",
+              "tertiary-container": "#a36700",
+              "surface-dim": "#dadada",
+              "on-primary-fixed-variant": "#1b3f9c",
+              "on-error-container": "#93000a",
+              "inverse-primary": "#b5c4ff",
+              "on-background": "#1a1c1c",
+              "on-primary-fixed": "#00164d",
+              surface: "#f9f9f9",
+              "primary-fixed-dim": "#b5c4ff",
+              "on-tertiary-fixed-variant": "#653e00",
+              "outline-variant": "#c4c5d4",
+              "primary-fixed": "#dce1ff",
+              "secondary-container": "#dbea1c",
+              "primary-container": "#516fce",
+              "surface-container-low": "#f3f3f4",
+              "on-tertiary": "#ffffff",
+              "on-secondary-fixed-variant": "#454b00",
+              tertiary: "#825100",
+              "surface-variant": "#e2e2e2",
+              "inverse-surface": "#2f3131",
+              secondary: "#5c6300",
+              "surface-container": "#eeeeee",
+              primary: "#3656b3",
+              "secondary-fixed": "#deed20",
+              "error-container": "#ffdad6",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#1b1d00",
+              "on-primary": "#ffffff",
+              "surface-tint": "#3958b5",
+              "on-surface": "#1a1c1c",
+              "surface-container-high": "#e8e8e8",
+              "on-tertiary-container": "#fffbff",
+              "inverse-on-surface": "#f0f1f1",
+              "on-tertiary-fixed": "#2a1700",
+              "on-error": "#ffffff",
+              "on-surface-variant": "#444652",
+              "tertiary-fixed-dim": "#ffb95e",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "section-padding-mobile": "60px",
+              "container-max-width": "1280px",
+              "grid-gutter": "24px",
+              "section-padding": "120px",
+            },
+            fontFamily: {
+              "body-lg": ["Hanken Grotesk"],
+              "display-hero": ["Anton"],
+              "display-hero-mobile": ["Anton"],
+              "label-caps": ["Anton"],
+              "body-md": ["Hanken Grotesk"],
+              "headline-lg": ["Anton"],
+              "headline-md": ["Anton"],
+            },
+            fontSize: {
+              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+              "display-hero": [
+                "96px",
+                { lineHeight: "100%", fontWeight: "400" },
+              ],
+              "display-hero-mobile": [
+                "56px",
+                { lineHeight: "100%", fontWeight: "400" },
+              ],
+              "label-caps": [
+                "14px",
+                {
+                  lineHeight: "100%",
+                  letterSpacing: "0.05em",
+                  fontWeight: "400",
+                },
+              ],
+              "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+              "headline-lg": [
+                "48px",
+                { lineHeight: "110%", fontWeight: "400" },
+              ],
+              "headline-md": [
+                "32px",
+                { lineHeight: "120%", fontWeight: "400" },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+    <!-- TopNavBar -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant"
+    >
+      <div
+        class="flex justify-between items-center px-6 md:px-12 py-4 max-w-container-max-width mx-auto"
+      >
+        <div
+          class="font-headline-md text-headline-md font-bold text-on-surface"
+        >
+          YOUSAF
+        </div>
+        <div class="hidden md:flex gap-8 items-center" id="navLinks">
+          <a
+            class="nav-link text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps"
+            href="#home"
+            >Home</a
+          >
+          <a
+            class="nav-link text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps"
+            href="#about"
+            >About</a
+          >
+          <a
+            class="nav-link text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps"
+            href="#experience"
+            >Experience</a
+          >
+          <a
+            class="nav-link text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps"
+            href="#achievements"
+            >Achievements</a
+          >
+          <a
+            class="nav-link text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps"
+            href="#works"
+            >Projects</a
+          >
+          <a
+            class="nav-link text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps"
+            href="#skills"
+            >Skills</a
+          >
+          <a
+            class="nav-link text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps"
+            href="#contact"
+            >Contact</a
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <button
+            onclick="triggerResumeDownload()"
+            class="hidden sm:block bg-secondary-fixed text-on-secondary-fixed px-6 py-2 rounded-full font-label-caps text-label-caps hover:opacity-80 transition-all active:scale-95"
+          >
+            Download Resume
+          </button>
+          <!-- Hamburger Button (Mobile Only) -->
+          <button
+            id="mobileMenuBtn"
+            onclick="toggleMobileMenu()"
+            class="md:hidden flex items-center justify-center p-2 text-on-surface hover:bg-surface-container rounded-full transition-colors"
+            aria-label="Toggle Menu"
+          >
+            <span class="material-symbols-outlined text-[28px]" id="menuIcon"
+              >menu</span
+            >
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu Drawer -->
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden absolute top-full left-0 w-full bg-surface border-b border-outline-variant px-6 py-6 space-y-4 shadow-lg flex flex-col"
+      >
+        <a
+          class="text-primary font-bold font-label-caps text-label-caps py-2 border-b border-outline-variant/10"
+          href="#home"
+          onclick="toggleMobileMenu()"
+          >Home</a
+        >
+        <a
+          class="text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps py-2 border-b border-outline-variant/10"
+          href="#about"
+          onclick="toggleMobileMenu()"
+          >About</a
+        >
+        <a
+          class="text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps py-2 border-b border-outline-variant/10"
+          href="#experience"
+          onclick="toggleMobileMenu()"
+          >Experience</a
+        >
+        <a
+          class="text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps py-2 border-b border-outline-variant/10"
+          href="#achievements"
+          onclick="toggleMobileMenu()"
+          >Achievements</a
+        >
+        <a
+          class="text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps py-2 border-b border-outline-variant/10"
+          href="#works"
+          onclick="toggleMobileMenu()"
+          >Projects</a
+        >
+        <a
+          class="text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps py-2 border-b border-outline-variant/10"
+          href="#skills"
+          onclick="toggleMobileMenu()"
+          >Skills</a
+        >
+        <a
+          class="text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps py-2 border-b border-outline-variant/10"
+          href="#contact"
+          onclick="toggleMobileMenu()"
+          >Contact</a
+        >
+        <button
+          onclick="
+            triggerResumeDownload();
+            toggleMobileMenu();
+          "
+          class="w-full bg-secondary-fixed text-on-secondary-fixed px-6 py-3 rounded-full font-label-caps text-label-caps hover:opacity-80 transition-all text-center"
+        >
+          Download Resume
+        </button>
+      </div>
+      <!-- Scroll Progress Bar -->
+      <div
+        class="absolute bottom-0 left-0 h-[3.5px] bg-gradient-to-r from-primary via-primary-container to-secondary-fixed w-0 transition-all duration-75"
+        id="scrollProgress"
+      ></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="pt-24 pb-12 md:pb-24 px-4 md:px-12 max-w-container-max-width mx-auto"
+      id="home"
+    >
+      <div
+        class="relative hero-mask flex flex-col md:flex-row min-h-[600px] overflow-hidden bg-primary px-8 md:pt-24 pt-12 pb-12 md:pb-0"
+        style="background-color: rgb(91, 121, 216)"
+      >
+        <!-- Mobile Layout Heading -->
+        <div class="block md:hidden text-center z-30 mb-6">
+          <h1
+            class="font-display-hero text-display-hero-mobile text-on-primary-container leading-none"
+          >
+            FRONTEND DEVELOPER
+          </h1>
+        </div>
+
+        <!-- Background Text Decoration (Desktop only) -->
+        <div
+          class="hidden md:flex absolute inset-0 flex flex-col justify-between p-8 md:p-16 pointer-events-none z-0 opacity-20 lg:opacity-100"
+        >
+          <h1
+            class="font-display-hero text-display-hero-mobile lg:text-display-hero text-on-primary-container leading-none max-w-[400px]"
+          >
+            FRONTEND DEVELOPER
+          </h1>
+          <div class="flex flex-col items-end text-right">
+            <h2
+              class="font-display-hero text-display-hero-mobile lg:text-display-hero text-on-primary-container leading-none max-w-[500px]"
+            >
+              WEBSITE DESIGNER
+            </h2>
+          </div>
+        </div>
+
+        <!-- Subject Image Center (Centered on small screens, absolute on larger screens) -->
+        <div
+          class="relative md:absolute inset-0 flex justify-center md:justify-end lg:justify-center z-20 items-end px-4 lg:px-0 mb-8 md:mb-0 pointer-events-none"
+        >
+          <img
+            alt="Yousaf Portrait"
+            class="h-[280px] md:h-[70%] lg:h-[85%] max-w-[80%] md:max-w-[50%] lg:max-w-none object-contain object-bottom"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB87GqpfDRzNixjXTgVPWuxCrKfEOkS8P-U-1QbQ0uSwQzkjQ9zjZeVuiiEH9qIno_0OBetSeOg7lvANKVtXFKd81lr0evUxIymyK4Pbw-sMCoqVY26AWTElLZkT2rx3ZJkg2YP_NsOYOPdj1jq5ul8lOTxz8YkJhRekdyIR0JFjlYMzce-0cLY-5eiGrurCynqgij9CYYYSInBRF6V1lagHy39yGd15CFIsj-RJ7tQx0scc0mlPezq-1GhNqbUS1mFtBfwM8BYw4Qm"
+          />
+        </div>
+
+        <!-- Bottom Left Text (Moved Up) (Responsive alignment: aligned left) -->
+        <div
+          class="relative z-30 mt-auto mb-8 mx-0 md:mb-12 md:self-end md:ml-8 lg:ml-8 max-w-sm md:max-w-[320px] text-left"
+        >
+          <p
+            class="text-on-primary-container font-headline-md text-headline-md mb-2"
+          >
+            <span id="typedText">HI, I AM YOUSAF</span
+            ><span class="typing-cursor"></span>
+          </p>
+          <p class="text-on-primary-container/80 text-body-md">
+            I design intuitive interfaces and develop user-centric solutions,
+            blending creativity and technical expertise to craft seamless
+            digital experiences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      class="py-section-padding-mobile md:py-section-padding bg-surface text-on-surface border-t border-outline-variant/10"
+      id="about"
+    >
+      <div class="max-w-container-max-width mx-auto px-4 md:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <!-- Section Title -->
+          <div class="lg:col-span-4">
+            <h2 class="font-headline-lg text-headline-lg text-on-surface uppercase mb-4">
+              ABOUT ME
+            </h2>
+            <div class="w-20 h-1.5 bg-primary mt-4 hidden lg:block"></div>
+          </div>
+          <!-- Section Content -->
+          <div class="lg:col-span-8 space-y-6 text-body-lg text-on-surface-variant leading-relaxed">
+            <p>
+              I'm <strong class="text-on-surface font-bold">Yousaf P</strong>, a Computer Science graduate and aspiring Software Engineer with a strong interest in frontend development, full-stack applications, and Artificial Intelligence.
+            </p>
+            <p>
+              I enjoy transforming ideas into practical, user-focused software solutions. My experience includes developing enterprise ERP modules, building responsive web applications, and creating AI-powered systems using Retrieval-Augmented Generation (RAG). Through these projects, I've gained hands-on experience with modern development practices, REST API integration, and scalable application design.
+            </p>
+            <p>
+              My primary technologies include <strong class="text-on-surface font-bold">JavaScript, Python, HTML5, CSS3, Bootstrap, PostgreSQL, Supabase, Git, and GitHub</strong>. I'm also exploring AI technologies such as <strong class="text-on-surface font-bold">LangChain, FAISS, Ollama, and Large Language Models (LLMs)</strong> to build intelligent applications that solve real-world problems.
+            </p>
+            <p>
+              I believe in writing clean, maintainable code, continuously improving my skills, and embracing new challenges. I'm currently seeking opportunities where I can contribute as a Software Engineer while continuing to grow as a developer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section
+      class="py-section-padding-mobile md:py-section-padding bg-primary-container text-on-primary-container"
+      id="experience"
+    >
+      <div class="max-w-container-max-width mx-auto px-4 md:px-12">
+        <h2 class="font-headline-lg text-headline-lg mb-12">WORK EXPERIENCE</h2>
+        <!-- Timeline vertical line container -->
+        <div class="relative ml-4 pl-8 py-2">
+          <!-- Vertical Line with Scale Animation -->
+          <div
+            class="timeline-line reveal absolute left-0 top-[18px] bottom-0 w-[2px] bg-white/20"
+          ></div>
+          <!-- Internship -->
+          <div class="relative">
+            <!-- Timeline Node (Circle) -->
+            <div
+              class="absolute -left-[44px] top-1.5 w-6 h-6 rounded-full bg-secondary-fixed border-4 border-primary-container flex items-center justify-center shadow-md"
+            ></div>
+            <div class="flex flex-col gap-1">
+              <span
+                class="font-body-md text-secondary-fixed tracking-widest text-sm font-bold"
+                >MAY 20, 2026 - PRESENT</span
+              >
+              <h3 class="font-headline-md text-headline-md mb-1">
+                FRONTEND DEVELOPER INTERN
+              </h3>
+              <p class="text-body-lg font-bold mb-2">
+                COREMICRON ENTERPRISES LLP
+              </p>
+              <p class="text-on-primary-container/80 text-body-md max-w-2xl">
+                Developing responsive user interfaces, integrating secure APIs,
+                and crafting intuitive, modern digital experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Counters -->
+    <section
+      class="py-section-padding-mobile md:py-section-padding bg-primary-container border-t border-white/10 text-on-primary-container"
+    >
+      <div class="max-w-container-max-width mx-auto px-4 md:px-12">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+          <div class="flex items-start gap-4">
+            <span
+              class="counter font-display-hero text-display-hero-mobile md:text-display-hero"
+              data-target="1"
+              data-decimals="0"
+              >00</span
+            >
+            <div class="mt-4 uppercase tracking-wider text-label-caps">
+              Internships<br />completed
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span
+              class="counter font-display-hero text-display-hero-mobile md:text-display-hero"
+              data-target="4"
+              data-decimals="0"
+              >00</span
+            >
+            <div class="mt-4 uppercase tracking-wider text-label-caps">
+              Projects<br />delivered
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span
+              class="counter font-display-hero text-display-hero-mobile md:text-display-hero"
+              data-target="10"
+              data-decimals="0"
+              >00</span
+            >
+            <div class="mt-4 uppercase tracking-wider text-label-caps">
+              Technologies<br />mastered
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span
+              class="counter font-display-hero text-display-hero-mobile md:text-display-hero"
+              data-target="8.3"
+              data-decimals="1"
+              >0.0</span
+            >
+            <div class="mt-4 uppercase tracking-wider text-label-caps">
+              CGPA<br />overall
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section
+      class="py-section-padding-mobile md:py-section-padding bg-white animate-fade-in"
+      id="achievements"
+    >
+      <div class="max-w-container-max-width mx-auto px-4 md:px-12">
+        <h2
+          class="font-headline-lg text-headline-lg text-on-surface mb-12 uppercase"
+        >
+          Achievements
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
+          <!-- Achievement 3 -->
+          <div
+            class="bg-surface-container-low p-6 lg:p-8 rounded-2xl flex flex-col justify-between h-full border border-outline-variant/30 hover-scale shadow-sm"
+          >
+            <div class="space-y-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary"
+              >
+                <span class="material-symbols-outlined text-[32px]"
+                  >workspace_premium</span
+                >
+              </div>
+              <h3 class="font-headline-md text-headline-md text-on-surface">
+                Academic Excellence
+              </h3>
+              <p class="text-on-surface-variant text-body-md">
+                Ranked in the top 5% of the Computer Science program with a CGPA
+                of 8.3, leading technical workshops on frontend engineering.
+              </p>
+            </div>
+            <div
+              class="mt-8 pt-4 border-t border-outline-variant/20 flex justify-between items-center text-label-caps text-on-surface-variant opacity-80"
+            >
+              <span>ACADEMIC</span>
+              <span class="font-bold text-primary">TOP 5%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Works Section -->
+    <section
+      class="py-section-padding-mobile md:py-section-padding bg-primary-container text-on-primary-container overflow-hidden border-t border-white/10"
+      id="works"
+    >
+      <div class="max-w-container-max-width mx-auto px-4 md:px-12">
+        <h2 class="font-headline-lg text-headline-lg mb-12">MY RECENT WORKS</h2>
+        <!-- Clean Balanced 2-Column Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+
+          <!-- Project 2: DrugGPT -->
+          <div
+            onclick="openProjectModal('druggpt')"
+            class="reveal group project-card active cursor-pointer"
+            style="transition-delay: 150ms"
+          >
+            <div
+              class="relative bg-white/5 rounded-2xl overflow-hidden border border-white/10 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:-translate-y-2 hover-scale"
+            >
+              <div class="aspect-video overflow-hidden">
+                <img
+                  alt="DrugGPT"
+                  class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-500"
+                  src="/assets/druggpt.png"
+                />
+              </div>
+              <div
+                class="p-8 bg-gradient-to-t from-black/80 to-transparent absolute bottom-0 inset-x-0"
+              >
+                <div class="w-12 h-1 bg-[#5B79D8] mb-4"></div>
+                <h4 class="font-headline-md text-headline-md text-white mb-2">
+                  DRUGGPT
+                </h4>
+                <p
+                  class="text-white/60 text-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                >
+                  AI-powered medical insight platform.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Expense Tracker -->
+          <div
+            onclick="openProjectModal('expense-tracker')"
+            class="reveal group project-card active cursor-pointer"
+            style="transition-delay: 300ms"
+          >
+            <div
+              class="relative bg-white/5 rounded-2xl overflow-hidden border border-white/10 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:-translate-y-2 hover-scale"
+            >
+              <div class="aspect-video overflow-hidden">
+                <img
+                  alt="Expense Tracker"
+                  class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-500"
+                  src="assets\expence_tracker.png"
+                />
+              </div>
+              <div
+                class="p-8 bg-gradient-to-t from-black/80 to-transparent absolute bottom-0 inset-x-0"
+              >
+                <div class="w-12 h-1 bg-[#5B79D8] mb-4"></div>
+                <h4 class="font-headline-md text-headline-md text-white mb-2">
+                  EXPENSE TRACKER
+                </h4>
+                <p
+                  class="text-white/60 text-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                >
+                  Real-time personal finance tracker.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Internal Stock Transfer (ERP) -->
+          <div
+            onclick="openProjectModal('erp-module')"
+            class="reveal group project-card active cursor-pointer"
+            style="transition-delay: 450ms"
+          >
+            <div
+              class="relative bg-white/5 rounded-2xl overflow-hidden border border-white/10 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:-translate-y-2 hover-scale"
+            >
+              <div class="aspect-video overflow-hidden">
+                <img
+                  alt="Internal Stock Transfer ERP Module"
+                  class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-500"
+                  src="assets/erp.png"
+                />
+              </div>
+              <div
+                class="p-8 bg-gradient-to-t from-black/80 to-transparent absolute bottom-0 inset-x-0"
+              >
+                <div class="w-12 h-1 bg-[#5B79D8] mb-4"></div>
+                <h4 class="font-headline-md text-headline-md text-white mb-2">
+                  INTERNAL STOCK TRANSFER
+                </h4>
+                <p
+                  class="text-white/60 text-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                >
+                  ERP module for inventory and stock routing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Skills Section -->
+    <section
+      class="py-section-padding-mobile md:py-section-padding overflow-hidden"
+      id="skills"
+    >
+      <div class="max-w-container-max-width mx-auto px-4 md:px-12 mb-12">
+        <h2 class="font-headline-lg text-headline-lg text-on-surface uppercase">
+          My Skills
+        </h2>
+      </div>
+      <div class="relative overflow-hidden w-full group py-4">
+        <!-- Left & Right Gradient Fades for Scrolling Effect -->
+        <div
+          class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-surface to-transparent z-20 pointer-events-none"
+        ></div>
+        <div
+          class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-surface to-transparent z-20 pointer-events-none"
+        ></div>
+        <!-- Carousel Track -->
+        <div class="animate-infinite-scroll flex gap-8">
+          <!-- Original Set -->
+          <div class="w-[75vw] md:w-[35vw] flex-shrink-0">
+            <div
+              class="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-white to-primary-fixed/30 border border-primary-fixed/50 hover:shadow-md hover:scale-[1.01] transition-all duration-300"
+            >
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center p-3"
+                  >
+                    <img
+                      src="./assets/html-5.png"
+                      alt="HTML5"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <span
+                    class="font-headline-md text-on-surface text-headline-md"
+                    >HTML5</span
+                  >
+                </div>
+                <span class="text-primary font-bold font-headline-md">95%</span>
+              </div>
+              <div
+                class="h-2 w-full bg-surface-container rounded-full overflow-hidden relative"
+              >
+                <div
+                  class="h-full bg-primary rounded-full shadow-[0_0_15px_rgba(54,86,179,0.4)]"
+                  style="width: 95%; background-color: #5b79d8"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[75vw] md:w-[35vw] flex-shrink-0">
+            <div
+              class="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-white to-primary-fixed/30 border border-primary-fixed/50 hover:shadow-md hover:scale-[1.01] transition-all duration-300"
+            >
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center p-3"
+                  >
+                    <img
+                      src="./assets/css-3.png"
+                      alt="CSS3"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <span
+                    class="font-headline-md text-on-surface text-headline-md"
+                    >CSS3</span
+                  >
+                </div>
+                <span class="text-primary font-bold font-headline-md">90%</span>
+              </div>
+              <div
+                class="h-2 w-full bg-surface-container rounded-full overflow-hidden relative"
+              >
+                <div
+                  class="h-full bg-primary rounded-full shadow-[0_0_15px_rgba(54,86,179,0.4)]"
+                  style="width: 90%; background-color: #5b79d8"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[75vw] md:w-[35vw] flex-shrink-0">
+            <div
+              class="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-white to-primary-fixed/30 border border-primary-fixed/50 hover:shadow-md hover:scale-[1.01] transition-all duration-300"
+            >
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center p-3"
+                  >
+                    <img
+                      src="./assets/js.png"
+                      alt="JavaScript"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <span
+                    class="font-headline-md text-on-surface text-headline-md"
+                    >JavaScript</span
+                  >
+                </div>
+                <span class="text-primary font-bold font-headline-md">85%</span>
+              </div>
+              <div
+                class="h-2 w-full bg-surface-container rounded-full overflow-hidden relative"
+              >
+                <div
+                  class="h-full bg-primary rounded-full shadow-[0_0_15px_rgba(54,86,179,0.4)]"
+                  style="width: 85%; background-color: #5b79d8"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[75vw] md:w-[35vw] flex-shrink-0">
+            <div
+              class="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-white to-primary-fixed/30 border border-primary-fixed/50 hover:shadow-md hover:scale-[1.01] transition-all duration-300"
+            >
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center p-3"
+                  >
+                    <img
+                      src="./assets/bootstrap.png"
+                      alt="Bootstrap"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <span
+                    class="font-headline-md text-on-surface text-headline-md"
+                    >Bootstrap</span
+                  >
+                </div>
+                <span class="text-primary font-bold font-headline-md">80%</span>
+              </div>
+              <div
+                class="h-2 w-full bg-surface-container rounded-full overflow-hidden relative"
+              >
+                <div
+                  class="h-full bg-primary rounded-full shadow-[0_0_15px_rgba(54,86,179,0.4)]"
+                  style="width: 80%; background-color: #5b79d8"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[75vw] md:w-[35vw] flex-shrink-0">
+            <div
+              class="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-white to-primary-fixed/30 border border-primary-fixed/50 hover:shadow-md hover:scale-[1.01] transition-all duration-300"
+            >
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center p-3"
+                  >
+                    <img
+                      src="./assets/c_programming.png"
+                      alt="C Programming"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <span
+                    class="font-headline-md text-on-surface text-headline-md"
+                    >C Programming</span
+                  >
+                </div>
+                <span class="text-primary font-bold font-headline-md">75%</span>
+              </div>
+              <div
+                class="h-2 w-full bg-surface-container rounded-full overflow-hidden relative"
+              >
+                <div
+                  class="h-full bg-primary rounded-full shadow-[0_0_15px_rgba(54,86,179,0.4)]"
+                  style="width: 75%; background-color: #5b79d8"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[75vw] md:w-[35vw] flex-shrink-0">
+            <div
+              class="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-white to-primary-fixed/30 border border-primary-fixed/50 hover:shadow-md hover:scale-[1.01] transition-all duration-300"
+            >
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center p-3"
+                  >
+                    <img
+                      src="./assets/java.png"
+                      alt="Java"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <span
+                    class="font-headline-md text-on-surface text-headline-md"
+                    >Java</span
+                  >
+                </div>
+                <span class="text-primary font-bold font-headline-md">80%</span>
+              </div>
+              <div
+                class="h-2 w-full bg-surface-container rounded-full overflow-hidden relative"
+              >
+                <div
+                  class="h-full bg-primary rounded-full shadow-[0_0_15px_rgba(54,86,179,0.4)]"
+                  style="width: 80%; background-color: #5b79d8"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[75vw] md:w-[35vw] flex-shrink-0">
+            <div
+              class="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-white to-primary-fixed/30 border border-primary-fixed/50 hover:shadow-md hover:scale-[1.01] transition-all duration-300"
+            >
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center p-3"
+                  >
+                    <img
+                      src="./assets/python.png"
+                      alt="Python"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <span
+                    class="font-headline-md text-on-surface text-headline-md"
+                    >Python</span
+                  >
+                </div>
+                <span class="text-primary font-bold font-headline-md">85%</span>
+              </div>
+              <div
+                class="h-2 w-full bg-surface-container rounded-full overflow-hidden relative"
+              >
+                <div
+                  class="h-full bg-primary rounded-full shadow-[0_0_15px_rgba(54,86,179,0.4)]"
+                  style="width: 85%; background-color: #5b79d8"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[75vw] md:w-[35vw] flex-shrink-0">
+            <div
+              class="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-white to-primary-fixed/30 border border-primary-fixed/50 hover:shadow-md hover:scale-[1.01] transition-all duration-300"
+            >
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center p-3"
+                  >
+                    <img
+                      src="assets/supabase.png"
+                      alt="Supabase"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <span
+                    class="font-headline-md text-on-surface text-headline-md"
+                    >Supabase</span
+                  >
+                </div>
+                <span class="text-primary font-bold font-headline-md">80%</span>
+              </div>
+              <div
+                class="h-2 w-full bg-surface-container rounded-full overflow-hidden relative"
+              >
+                <div
+                  class="h-full bg-primary rounded-full shadow-[0_0_15px_rgba(54,86,179,0.4)]"
+                  style="width: 80%; background-color: #5b79d8"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Duplicate Set for Seamless Loop -->
+          <div class="w-[75vw] md:w-[35vw] flex-shrink-0">
+            <div
+              class="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-white to-primary-fixed/30 border border-primary-fixed/50 hover:shadow-md hover:scale-[1.01] transition-all duration-300"
+            >
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center p-3"
+                  >
+                    <img
+                      src="./assets/html-5.png"
+                      alt="HTML5"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <span
+                    class="font-headline-md text-on-surface text-headline-md"
+                    >HTML5</span
+                  >
+                </div>
+                <span class="text-primary font-bold font-headline-md">95%</span>
+              </div>
+              <div
+                class="h-2 w-full bg-surface-container rounded-full overflow-hidden relative"
+              >
+                <div
+                  class="h-full bg-primary rounded-full shadow-[0_0_15px_rgba(54,86,179,0.4)]"
+                  style="width: 95%; background-color: #5b79d8"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[75vw] md:w-[35vw] flex-shrink-0">
+            <div
+              class="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-white to-primary-fixed/30 border border-primary-fixed/50 hover:shadow-md hover:scale-[1.01] transition-all duration-300"
+            >
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center p-3"
+                  >
+                    <img
+                      src="./assets/css-3.png"
+                      alt="CSS3"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <span
+                    class="font-headline-md text-on-surface text-headline-md"
+                    >CSS3</span
+                  >
+                </div>
+                <span class="text-primary font-bold font-headline-md">90%</span>
+              </div>
+              <div
+                class="h-2 w-full bg-surface-container rounded-full overflow-hidden relative"
+              >
+                <div
+                  class="h-full bg-primary rounded-full shadow-[0_0_15px_rgba(54,86,179,0.4)]"
+                  style="width: 90%; background-color: #5b79d8"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[75vw] md:w-[35vw] flex-shrink-0">
+            <div
+              class="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-white to-primary-fixed/30 border border-primary-fixed/50 hover:shadow-md hover:scale-[1.01] transition-all duration-300"
+            >
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center p-3"
+                  >
+                    <img
+                      src="./assets/js.png"
+                      alt="JavaScript"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <span
+                    class="font-headline-md text-on-surface text-headline-md"
+                    >JavaScript</span
+                  >
+                </div>
+                <span class="text-primary font-bold font-headline-md">85%</span>
+              </div>
+              <div
+                class="h-2 w-full bg-surface-container rounded-full overflow-hidden relative"
+              >
+                <div
+                  class="h-full bg-primary rounded-full shadow-[0_0_15px_rgba(54,86,179,0.4)]"
+                  style="width: 85%; background-color: #5b79d8"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[75vw] md:w-[35vw] flex-shrink-0">
+            <div
+              class="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-white to-primary-fixed/30 border border-primary-fixed/50 hover:shadow-md hover:scale-[1.01] transition-all duration-300"
+            >
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center p-3"
+                  >
+                    <img
+                      src="./assets/bootstrap.png"
+                      alt="Bootstrap"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <span
+                    class="font-headline-md text-on-surface text-headline-md"
+                    >Bootstrap</span
+                  >
+                </div>
+                <span class="text-primary font-bold font-headline-md">80%</span>
+              </div>
+              <div
+                class="h-2 w-full bg-surface-container rounded-full overflow-hidden relative"
+              >
+                <div
+                  class="h-full bg-primary rounded-full shadow-[0_0_15px_rgba(54,86,179,0.4)]"
+                  style="width: 80%; background-color: #5b79d8"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[75vw] md:w-[35vw] flex-shrink-0">
+            <div
+              class="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-white to-primary-fixed/30 border border-primary-fixed/50 hover:shadow-md hover:scale-[1.01] transition-all duration-300"
+            >
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center p-3"
+                  >
+                    <img
+                      src="./assets/c_programming.png"
+                      alt="C Programming"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <span
+                    class="font-headline-md text-on-surface text-headline-md"
+                    >C Programming</span
+                  >
+                </div>
+                <span class="text-primary font-bold font-headline-md">75%</span>
+              </div>
+              <div
+                class="h-2 w-full bg-surface-container rounded-full overflow-hidden relative"
+              >
+                <div
+                  class="h-full bg-primary rounded-full shadow-[0_0_15px_rgba(54,86,179,0.4)]"
+                  style="width: 75%; background-color: #5b79d8"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[75vw] md:w-[35vw] flex-shrink-0">
+            <div
+              class="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-white to-primary-fixed/30 border border-primary-fixed/50 hover:shadow-md hover:scale-[1.01] transition-all duration-300"
+            >
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center p-3"
+                  >
+                    <img
+                      src="./assets/java.png"
+                      alt="Java"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <span
+                    class="font-headline-md text-on-surface text-headline-md"
+                    >Java</span
+                  >
+                </div>
+                <span class="text-primary font-bold font-headline-md">80%</span>
+              </div>
+              <div
+                class="h-2 w-full bg-surface-container rounded-full overflow-hidden relative"
+              >
+                <div
+                  class="h-full bg-primary rounded-full shadow-[0_0_15px_rgba(54,86,179,0.4)]"
+                  style="width: 80%; background-color: #5b79d8"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[75vw] md:w-[35vw] flex-shrink-0">
+            <div
+              class="space-y-6 p-8 rounded-xl bg-surface-container-low border border-outline-variant"
+            >
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center p-3"
+                  >
+                    <img
+                      src="./assets/python.png"
+                      alt="Python"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <span
+                    class="font-headline-md text-on-surface text-headline-md"
+                    >Python</span
+                  >
+                </div>
+                <span class="text-primary font-bold font-headline-md">85%</span>
+              </div>
+              <div
+                class="h-2 w-full bg-surface-container rounded-full overflow-hidden relative"
+              >
+                <div
+                  class="h-full bg-primary rounded-full shadow-[0_0_15px_rgba(54,86,179,0.4)]"
+                  style="width: 85%; background-color: #5b79d8"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[75vw] md:w-[35vw] flex-shrink-0">
+            <div
+              class="space-y-6 p-8 rounded-xl bg-surface-container-low border border-outline-variant"
+            >
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center p-3"
+                  >
+                    <img
+                      src="assets/supabase.png"
+                      alt="Supabase"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                  <span
+                    class="font-headline-md text-on-surface text-headline-md"
+                    >Supabase</span
+                  >
+                </div>
+                <span class="text-primary font-bold font-headline-md">80%</span>
+              </div>
+              <div
+                class="h-2 w-full bg-surface-container rounded-full overflow-hidden relative"
+              >
+                <div
+                  class="h-full bg-primary rounded-full shadow-[0_0_15px_rgba(54,86,179,0.4)]"
+                  style="width: 80%; background-color: #5b79d8"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section
+      class="py-section-padding-mobile md:py-section-padding bg-white relative overflow-hidden"
+      id="contact"
+    >
+      <div
+        class="max-w-container-max-width mx-auto px-4 md:px-12 flex flex-col md:flex-row items-center justify-between gap-12"
+      >
+        <div class="max-w-2xl">
+          <h2
+            class="font-display-hero text-display-hero-mobile md:text-display-hero text-on-surface leading-none mb-4 uppercase"
+          >
+            Have a project?
+          </h2>
+          <h3
+            class="font-display-hero text-display-hero-mobile md:text-display-hero text-primary leading-none uppercase"
+          >
+            Let's Talk
+          </h3>
+        </div>
+        <div class="flex flex-col items-center md:items-start gap-8">
+          <p
+            class="text-on-surface-variant text-body-lg max-w-sm text-center md:text-left"
+          >
+            Whether you need an intuitive UI, robust frontend development, or a
+            secure application, I'm here to build it.
+          </p>
+          <button
+            onclick="openContactModal()"
+            class="w-48 h-48 rounded-full bg-secondary-fixed text-on-secondary-fixed flex flex-col items-center justify-center font-display-hero text-headline-md hover:scale-105 transition-transform active:scale-95 group"
+          >
+            CONTACT ME
+            <span
+              class="material-symbols-outlined text-[48px] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
+              >north_east</span
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-primary text-on-primary py-section-padding-mobile md:py-section-padding"
+    >
+      <div class="max-w-container-max-width mx-auto px-4 md:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+          <!-- Quick Links -->
+          <div>
+            <h5 class="font-label-caps text-label-caps mb-6">QUICK LINKS</h5>
+            <ul class="space-y-4">
+              <li class="">
+                <a
+                  class="text-on-primary/80 hover:text-on-primary hover:underline transition-all"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="text-on-primary/80 hover:text-on-primary hover:underline transition-all"
+                  href="#about"
+                  >About</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="text-on-primary/80 hover:text-on-primary hover:underline transition-all"
+                  href="#experience"
+                  >Experience</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="text-on-primary/80 hover:text-on-primary hover:underline transition-all"
+                  href="#achievements"
+                  >Achievements</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="text-on-primary/80 hover:text-on-primary hover:underline transition-all"
+                  href="#works"
+                  >Projects</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="text-on-primary/80 hover:text-on-primary hover:underline transition-all"
+                  href="#skills"
+                  >Skills</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Follow & Address -->
+          <div>
+            <h5 class="font-label-caps text-label-caps mb-6">FOLLOW</h5>
+            <ul class="space-y-4 mb-8">
+              <li class="">
+                <a
+                  class="text-on-primary/80 hover:text-on-primary hover:underline transition-all"
+                  href="https://www.linkedin.com/in/yousafp?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="text-on-primary/80 hover:text-on-primary hover:underline transition-all"
+                  href="https://github.com/yousaf1054"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+            <h5 class="font-label-caps text-label-caps mb-4">ADDRESS</h5>
+            <p class="text-on-primary/80 text-body-md">
+              Malappuram, Kerala,<br />India - 676704
+            </p>
+          </div>
+        </div>
+        <div
+          class="pt-8 border-t border-on-primary/10 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <p class="font-body-md text-on-primary/60">
+            2024 @ YOUSAF P. ALL RIGHTS RESERVED
+          </p>
+          <div class="flex gap-8">
+            <a
+              class="text-on-primary/60 hover:text-on-primary text-body-md"
+              href="#"
+              >Privacy Policy</a
+            >
+            <a
+              class="text-on-primary/60 hover:text-on-primary text-body-md"
+              href="#"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Project & Skill Detail Modal -->
+    <div
+      id="detailModal"
+      class="hidden fixed inset-0 z-[60] bg-black/75 backdrop-blur-md flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-white text-on-background max-w-2xl w-full rounded-2xl overflow-hidden relative max-h-[90vh] flex flex-col shadow-2xl border border-outline/20"
+      >
+        <button
+          onclick="closeDetailModal()"
+          class="absolute top-6 right-6 p-2 bg-surface-container hover:bg-surface-container-high rounded-full text-on-surface transition-colors z-10"
+          aria-label="Close modal"
+        >
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="overflow-y-auto p-6 sm:p-8 space-y-6">
+          <div
+            class="aspect-video w-full rounded-xl overflow-hidden relative bg-surface-container"
+          >
+            <img
+              id="modalImage"
+              src=""
+              alt="Detail Image"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div>
+            <div id="modalTags" class="flex gap-2 mb-4 flex-wrap"></div>
+            <h3
+              id="modalTitle"
+              class="font-headline-md text-headline-md text-on-surface mb-2"
+            >
+              Title
+            </h3>
+            <p
+              id="modalDescription"
+              class="font-body-md text-body-md text-on-surface-variant mb-6"
+            >
+              Description...
+            </p>
+            <div id="modalLinks" class="flex gap-4">
+              <a
+                id="modalLiveLink"
+                href="#"
+                target="_blank"
+                class="px-6 py-3 bg-primary text-on-primary font-bold rounded-full hover:scale-105 active:scale-95 transition-all inline-flex items-center gap-2"
+              >
+                View Details
+                <span class="material-symbols-outlined text-sm"
+                  >north_east</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Contact Modal -->
+    <div
+      id="contactModal"
+      class="hidden fixed inset-0 z-[60] bg-black/75 backdrop-blur-md flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-white text-on-background max-w-md w-full rounded-2xl overflow-hidden relative p-6 sm:p-8 shadow-2xl border border-outline/20"
+      >
+        <button
+          onclick="closeContactModal()"
+          class="absolute top-4 right-4 p-2 text-on-surface hover:bg-surface-container rounded-full transition-colors"
+          aria-label="Close"
+        >
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <h3 class="font-headline-md text-headline-md mb-6">GET IN TOUCH</h3>
+        <form
+          id="contactForm"
+          class="space-y-6"
+          onsubmit="handleContactSubmit(event)"
+        >
+          <div>
+            <label class="block text-sm font-bold uppercase mb-2" for="name"
+              >Your Name</label
+            >
+            <input
+              class="w-full rounded-lg border-outline/30 focus:border-primary focus:ring-0 p-3"
+              id="name"
+              required
+              type="text"
+              placeholder="John Doe"
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-bold uppercase mb-2" for="email"
+              >Email Address</label
+            >
+            <input
+              class="w-full rounded-lg border-outline/30 focus:border-primary focus:ring-0 p-3"
+              id="email"
+              required
+              type="email"
+              placeholder="john@example.com"
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-bold uppercase mb-2" for="phone"
+              >Phone Number</label
+            >
+            <input
+              class="w-full rounded-lg border-outline/30 focus:border-primary focus:ring-0 p-3"
+              id="phone"
+              type="tel"
+              placeholder="+1 (555) 000-0000"
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-bold uppercase mb-2" for="message"
+              >Your Message</label
+            >
+            <textarea
+              class="w-full rounded-lg border-outline/30 focus:border-primary focus:ring-0 p-3"
+              id="message"
+              required
+              rows="4"
+              placeholder="Tell me about your idea..."
+            ></textarea>
+          </div>
+          <button
+            class="w-full py-4 bg-primary text-on-primary font-bold rounded-full active:scale-95 transition-transform"
+            type="submit"
+          >
+            Send Message
+          </button>
+        </form>
+        <!-- Success Overlay inside modal -->
+        <div
+          id="modalSuccessOverlay"
+          class="hidden absolute inset-0 bg-white flex flex-col items-center justify-center p-6 sm:p-8 text-center"
+        >
+          <span class="material-symbols-outlined text-primary text-6xl mb-4"
+            >check_circle</span
+          >
+          <h4 class="font-headline-md text-headline-md mb-2">MESSAGE SENT!</h4>
+          <p class="text-on-surface-variant mb-6">
+            Thank you for reaching out.I will get back to you shortly.
+          </p>
+          <button
+            onclick="closeContactModal()"
+            class="px-6 py-2 bg-secondary-fixed text-on-secondary-fixed rounded-full font-label-caps text-label-caps"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submission Status Modal -->
+    <div
+      id="statusModal"
+      class="hidden fixed inset-0 z-[60] bg-black/75 backdrop-blur-md flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-white text-on-background max-w-md w-full rounded-2xl overflow-hidden relative p-6 sm:p-8 shadow-2xl border border-outline/20 text-center flex flex-col items-center"
+      >
+        <button
+          onclick="closeStatusModal()"
+          class="absolute top-4 right-4 p-2 text-on-surface hover:bg-surface-container rounded-full transition-colors"
+          aria-label="Close"
+        >
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <div id="statusIconContainer" class="mb-4">
+          <!-- Icon will be dynamically updated -->
+        </div>
+        <h3 id="statusTitle" class="font-headline-md text-headline-md mb-2">
+          STATUS
+        </h3>
+        <p id="statusMessage" class="text-on-surface-variant mb-6">
+          Status message...
+        </p>
+        <button
+          onclick="closeStatusModal()"
+          class="px-8 py-3 bg-primary text-on-primary font-bold rounded-full active:scale-95 transition-transform"
+        >
+          OK
+        </button>
+      </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div
+      id="toast"
+      class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-primary-container text-on-primary-container px-6 py-4 rounded-xl shadow-lg flex items-center gap-3"
+    >
+      <span class="material-symbols-outlined" id="toastIcon">info</span>
+      <span id="toastMessage" class="font-bold">Notification message</span>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

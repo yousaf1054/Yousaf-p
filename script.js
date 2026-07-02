@@ -13,7 +13,7 @@ const contentDb = {
       title: "DRUGGPT",
       description:
         "AI bio-research assistant facilitating fast molecule profiling, protein interaction queries, and chemical dataset reviews via large language models.",
-      image: "/assets/druggpt.png",
+      image: "assets/druggpt.png",
       tags: ["AI Assistant", "Bioinformatics", "React"],
       link: "https://github.com/yousaf1054",
     },

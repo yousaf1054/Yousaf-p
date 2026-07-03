@@ -129,7 +129,7 @@
       <div class="font-headline-md text-headline-md font-bold text-on-surface">
         YOUSAF
       </div>
-      <div class="hidden md:flex gap-8 items-center" id="navLinks">
+      <div class="hidden lg:flex gap-6 lg:gap-8 items-center" id="navLinks">
         <a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps"
           href="#home">Home</a>
         <a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps"
@@ -152,7 +152,7 @@
         </button>
         <!-- Hamburger Button (Mobile Only) -->
         <button id="mobileMenuBtn" onclick="toggleMobileMenu()"
-          class="md:hidden flex items-center justify-center p-2 text-on-surface hover:bg-surface-container rounded-full transition-colors"
+          class="lg:hidden flex items-center justify-center p-2 text-on-surface hover:bg-surface-container rounded-full transition-colors"
           aria-label="Toggle Menu">
           <span class="material-symbols-outlined text-[28px]" id="menuIcon">menu</span>
         </button>
@@ -160,7 +160,7 @@
     </div>
     <!-- Mobile Menu Drawer -->
     <div id="mobileMenu"
-      class="hidden md:hidden absolute top-full left-0 w-full bg-surface border-b border-outline-variant px-6 py-6 space-y-4 shadow-lg flex flex-col">
+      class="hidden lg:hidden absolute top-full left-0 w-full bg-surface border-b border-outline-variant px-6 py-6 space-y-4 shadow-lg flex flex-col">
       <a class="text-primary font-bold font-label-caps text-label-caps py-2 border-b border-outline-variant/10"
         href="#home" onclick="toggleMobileMenu()">Home</a>
       <a class="text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps py-2 border-b border-outline-variant/10"
@@ -185,7 +185,8 @@
     </div>
     <!-- Scroll Progress Bar -->
     <div
-      class="absolute bottom-0 left-0 h-[3.5px] bg-gradient-to-r from-primary via-primary-container to-secondary-fixed w-0 transition-all duration-75"
+      class="absolute bottom-0 left-0 bg-gradient-to-r from-primary via-primary-container to-secondary-fixed w-0 transition-all duration-75"
+      style="height: 3px;"
       id="scrollProgress"></div>
   </nav>
 
@@ -201,14 +202,14 @@
         </h1>
       </div>
 
-      <!-- Background Text Decoration (Desktop only) -->
+      <!-- Background Text Decoration -->
       <div
-        class="hidden md:flex absolute inset-0 flex flex-col justify-between p-8 md:p-16 pointer-events-none z-0 opacity-20 lg:opacity-100">
+        class="hidden md:flex absolute inset-0 flex flex-col justify-between p-8 md:p-16 pointer-events-none z-0">
         <h1
           class="font-display-hero text-display-hero-mobile lg:text-display-hero text-on-primary-container leading-none max-w-[400px]">
           SOFTWARE DEVELOPER
         </h1>
-        <div class="flex flex-col items-end text-right">
+        <div class="hidden lg:flex flex-col items-end text-right">
           <h2
             class="font-display-hero text-display-hero-mobile lg:text-display-hero text-on-primary-container leading-none max-w-[500px]">
             WEBSITE DESIGNER
@@ -424,12 +425,12 @@
                 class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-500"
                 src="assets/druggpt.png" />
             </div>
-            <div class="p-8 bg-gradient-to-t from-black/80 to-transparent absolute bottom-0 inset-x-0">
+            <div class="p-6 md:p-8 bg-black/40 md:bg-gradient-to-t md:from-black/80 md:to-transparent md:absolute md:bottom-0 md:inset-x-0 w-full">
               <div class="w-12 h-1 bg-[#5172d9] mb-4"></div>
               <h4 class="font-headline-md text-headline-md text-white mb-2">
                 DRUGGPT
               </h4>
-              <p class="text-white/60 text-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <p class="text-white/80 text-body-md opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500">
                 AI-powered medical insight platform.
               </p>
             </div>
@@ -446,12 +447,12 @@
                 class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-500"
                 src="assets/expence_tracker.png" />
             </div>
-            <div class="p-8 bg-gradient-to-t from-black/80 to-transparent absolute bottom-0 inset-x-0">
+            <div class="p-6 md:p-8 bg-black/40 md:bg-gradient-to-t md:from-black/80 md:to-transparent md:absolute md:bottom-0 md:inset-x-0 w-full">
               <div class="w-12 h-1 bg-[#5172d9] mb-4"></div>
               <h4 class="font-headline-md text-headline-md text-white mb-2">
                 EXPENSE TRACKER
               </h4>
-              <p class="text-white/60 text-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <p class="text-white/80 text-body-md opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500">
                 Real-time personal finance tracker.
               </p>
             </div>
@@ -468,12 +469,12 @@
                 class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-500"
                 src="assets/erp.png" />
             </div>
-            <div class="p-8 bg-gradient-to-t from-black/80 to-transparent absolute bottom-0 inset-x-0">
+            <div class="p-6 md:p-8 bg-black/40 md:bg-gradient-to-t md:from-black/80 md:to-transparent md:absolute md:bottom-0 md:inset-x-0 w-full">
               <div class="w-12 h-1 bg-[#5172d9] mb-4"></div>
               <h4 class="font-headline-md text-headline-md text-white mb-2">
                 INTERNAL STOCK TRANSFER
               </h4>
-              <p class="text-white/60 text-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <p class="text-white/80 text-body-md opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500">
                 ERP module for inventory and stock routing.
               </p>
             </div>

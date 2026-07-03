@@ -78,3 +78,53 @@
     background-color: currentColor;
   }
 }
+
+/* Responsive and Device Compatibility Adjustments */
+
+/* Tablet & Mobile Layout Fixes */
+@media (max-width: 1024px) {
+  /* Compact Navbar Padding for touch screens */
+  nav > div:first-child {
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  /* Make brand name a bit more compact to prevent overflow */
+  nav .font-headline-md {
+    font-size: 1.5rem !important;
+  }
+
+  /* Make mobile menu drawer fixed and scrollable so all items and download button fit on any screen height */
+  #mobileMenu {
+    position: fixed !important;
+    top: 57px !important; /* height of header */
+    left: 0 !important;
+    width: 100% !important;
+    max-height: calc(100vh - 57px) !important;
+    overflow-y: auto !important;
+    z-index: 49 !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Small Mobile Screens (Portrait - under 420px) */
+@media (max-width: 420px) {
+  /* Prevent large display headings from wrapping awkwardly or overflowing */
+  .text-display-hero-mobile {
+    font-size: 2.5rem !important;
+    line-height: 1.1 !important;
+  }
+
+  /* Adjust section padding for smaller screens */
+  .py-section-padding-mobile {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+/* Explicit slim height for scroll progress bar */
+#scrollProgress {
+  height: 3px !important;
+}
